@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Blog 2.0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1 class="app-title">Recipe Blog 2.0</h1>
+      <p class="app-subtitle">Discover beautifully curated recipes in one modern, purple space.</p>
+    </header>
+
+    <main class="app-main">
+      <section class="recipes-section">
+        <h2 class="section-title">Latest Recipes</h2>
+        <div id="recipes" class="recipes-grid"></div>
+      </section>
+
+      <section id="recipe-detail" class="recipe-detail hidden">
+        <div class="recipe-detail-header">
+          <div>
+            <p class="recipe-detail-label">Instructions</p>
+            <h2 id="detail-title" class="recipe-detail-title"></h2>
+          </div>
+          <button id="detail-close" class="detail-close-btn" type="button">Close</button>
+        </div>
+        <div id="detail-meta" class="recipe-detail-meta"></div>
+        <ol id="detail-instructions" class="recipe-detail-steps"></ol>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
